@@ -58,7 +58,7 @@ A professional-grade simulation tool for wireless network analysis education and
 wsl --install
 wsl
 git clone https://github.com/dawoodkhatri1/Wifi-Jammer-using-arduino-uno.git
-cd wifi-security-simulator
+cd Wifi-Jammer-using-arduino-uno
 ./configure
 make
 ```
@@ -67,7 +67,7 @@ make
 
 ```bash
 git clone https://github.com/dawoodkhatri1/Wifi-Jammer-using-arduino-uno.git
-cd wifi-security-simulator
+cd Wifi-Jammer-using-arduino-uno
 mkdir build && cd build
 cmake ..
 make
