@@ -1,62 +1,92 @@
 # WiFi Security Research Tool - Channel Analysis Simulator
 
 ![GitHub license](https://img.shields.io/badge/License-Educational_Use_Only-blue)
-![Platform support](https://img.shields.io/badge/Platform-Linux%20|%20macOS%20|%20WSL-blueviolet)
+![Platform support](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS%20%7C%20WSL-blueviolet)
 ![Project status](https://img.shields.io/badge/Status-Active%20Development-brightgreen)
 
 A professional-grade simulation tool for wireless network analysis education and research.
 
-**⚠️ Important Disclaimer**: This is a simulation-only tool. It does not transmit any radio signals or interact with real networks. For educational use in controlled environments only.
+> ⚠️ **Important Disclaimer**:  
+> This is a simulation-only tool. It does **not** transmit any radio signals or interact with real networks.  
+> For educational use in controlled environments only.
 
-## Table of Contents
+---
+
+## 📑 Table of Contents
+
 - [Features](#-features)
 - [Installation](#-installation)
 - [Usage](#-usage)
 - [Technical Architecture](#-technical-architecture)
+- [Core Algorithms](#core-algorithms)
 - [Contributing](#-contributing)
-- [License](#-license)
 - [Contact](#-contact)
+
+---
 
 ## 🌟 Features
 
-### Network Simulation
+### 🛰️ Network Simulation
 - Realistic channel hopping simulation
 - Virtual signal propagation modeling
 - Dynamic network environment generation
 
-### Analysis Capabilities
+### 📊 Analysis Capabilities
 - Multi-channel spectrum analysis
 - Signal strength visualization (RSSI)
 - Channel utilization metrics
 - Interference pattern simulation
 
-### Educational Tools
+### 🎓 Educational Tools
 - Step-by-step operation commentary
 - Regulatory compliance guidance
 - Security best practices documentation
 
+---
+
 ## 💻 Installation
 
 ### Prerequisites
-- GCC (≥9.0) or Clang (≥10.0)
+
+- GCC (≥ 9.0) or Clang (≥ 10.0)
 - GNU Make
 - Git
 
+### WSL Example
 
-
-###Wifi Jammer 
+```bash
 wsl --install
 wsl
-git clone https://github.com/yourorg/wifi-security-simulator.git
+git clone https://github.com/dawoodkhatri1/Wifi-Jammer-using-arduino-uno.git
 cd wifi-security-simulator
 ./configure
 make
+```
 
+### Linux/macOS (CMake)
 
-##Basic Command
+```bash
+git clone https://github.com/dawoodkhatri1/Wifi-Jammer-using-arduino-uno.git
+cd wifi-security-simulator
+mkdir build && cd build
+cmake ..
+make
+sudo make install
+```
+
+---
+
+## 🚀 Usage
+
+```bash
 ./wifi-simulator [OPTIONS]
+```
 
-###System Architecture
+---
+
+## 🧠 Technical Architecture
+
+```mermaid
 graph LR
     A[CLI Interface] --> B[Simulation Engine]
     B --> C[Channel Hopper]
@@ -65,64 +95,47 @@ graph LR
     D --> F[Randomization Service]
     B --> G[Analysis Module]
     G --> H[Report Generator]
+```
 
+---
 
-##Core Algorithms
+## 🧬 Core Algorithms
 
-  Channel Scanning:
+### Channel Scanning
+- Adaptive dwell time algorithm  
+- Signal detection probability model  
+- Channel state tracking
 
-  Adaptive dwell time algorithm
+### Network Simulation
+- SSID pattern generation  
+- Realistic signal strength distribution  
+- Network behavior modeling
 
-  Signal detection probability model
+### Analysis
+- Channel congestion calculation  
+- Interference pattern analysis  
+- Network density estimation
 
-  Channel state tracking
+---
 
-    
-  Network Simulation:
-
-  SSID pattern generation
-
-  Realistic signal strength distribution
-
-  Network behavior modeling
-
-    
-  Analysis:
-
-  Channel congestion calculation
-
-  Interference pattern analysis
-
-  Network density estimation
-
-##🤝 Contributing
+## 🤝 Contributing
 
 We welcome contributions from:
 
-Wireless security professionals
+- Wireless security professionals  
+- Academic researchers  
+- RF engineering specialists
 
-Academic researchers
+### Code Standards
 
-RF engineering specialists
+- Follow existing style conventions  
+- Include comprehensive comments  
+- Provide test cases for new features  
+- Update documentation accordingly
 
+---
 
-Code Standards:
+## 📬 Contact
 
-  Follow existing style conventions
-
-  Include comprehensive comments
-
-  Provide test cases for new features
-
-  Update documentation accordingly
-
-### Linux/macOS
-```bash
-git clone https://github.com/yourorg/wifi-security-simulator.git
-cd wifi-security-simulator
-mkdir build && cd build
-cmake ..
-make
-sudo make install
-
-
+Have suggestions or questions?  
+Open an issue or reach out via **GitHub Discussions**.
